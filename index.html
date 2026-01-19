@@ -21,24 +21,52 @@
           >
         </h3>
 
-        <ul class="flex gap-8">
-          <li class="text-lg"><a href="#" class="cursor-pointer text-white hover:text-[#00FF88] transition-colors duration-300">About</a></li>
-          <li class="text-lg"><a href="#" class="cursor-pointer text-white hover:text-[#00FF88] transition-colors duration-300">Episodes</a></li>
-          <li class="text-lg"><a href="#" class="cursor-pointer text-white hover:text-[#00FF88] transition-colors duration-300">Host</a></li>
+        <ul class="flex gap-8 hidden md:flex">
+          <li class="text-lg">
+            <a
+              href="#"
+              class="cursor-pointer text-white hover:text-[#00FF88] transition-colors duration-300"
+              >About</a
+            >
+          </li>
+          <li class="text-lg">
+            <a
+              href="#"
+              class="cursor-pointer text-white hover:text-[#00FF88] transition-colors duration-300"
+              >Episodes</a
+            >
+          </li>
+          <li class="text-lg">
+            <a
+              href="#"
+              class="cursor-pointer text-white hover:text-[#00FF88] transition-colors duration-300"
+              >Host</a
+            >
+          </li>
         </ul>
 
-        <button
-          class="px-8 py-3 rounded-full text-white font-semibold bg-[linear-gradient(90deg,_#F7E93F_0%,_#FB09B4_51%,_#9100F8_100%)] flex items-center justify-center gap-2 transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-pink-500/40"
-        >
-          Sbuscribe
-        </button>
+        <!-- Subscribe Button + Hamburger -->
+        <div class="flex items-center gap-4">
+          <!-- Desktop Subscribe -->
+
+          <button
+            class="px-8 py-3 rounded-full text-white font-semibold bg-[linear-gradient(90deg,_#F7E93F_0%,_#FB09B4_51%,_#9100F8_100%)] flex items-center justify-center gap-2 transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-pink-500/40 hidden md:flex"
+          >
+            Sbuscribe
+          </button>
+          <!-- Hamberger menu  -->
+          <img
+            src="./assets/hamburger-menu.png"
+            alt="Menu"
+            class="w-6 h-6 md:hidden cursor-pointer"
+          />
+        </div>
       </nav>
 
       <!-- For banner section -->
       <div
         class="relative w-full h-[760px] bg-[url('/assets/hero-bg.png')] bg-cover bg-center flex justify-center items-center"
       >
-      
         <!-- Content Overlay -->
         <div class="flex flex-col items-center text-center gap-6 z-10">
           <!-- Circle + Microphone -->
@@ -54,11 +82,11 @@
               class="absolute top-1/2 left-1/2 w-28 h-44 -translate-x-1/2 -translate-y-1/2"
             />
             <!-- For new  badge -->
-      <img
-        src="./assets/new.png"
-        alt="NEW"
-        class="absolute -top-2 right-4 w-23 h-auto"
-      />
+            <img
+              src="./assets/new.png"
+              alt="NEW"
+              class="absolute -top-2 right-4 w-23 h-auto"
+            />
           </div>
 
           <!-- For heading and Paragraph.. -->
@@ -78,16 +106,11 @@
             </button>
 
             <button
-  class="px-5 py-3 rounded-full border-2 border-[#00FF88]
-  text-[#00FF88] font-semibold bg-transparent
-  flex items-center justify-center gap-2
-  transition duration-300 ease-in-out
-  hover:bg-[#00FF88] hover:text-black hover:scale-105"
->
-  <img src="./assets/message.png" alt="" class="w-5 h-5" />
-  Subscribe
-</button>
-
+              class="px-5 py-3 rounded-full border-2 border-[#00FF88] text-[#00FF88] font-semibold bg-transparent flex items-center justify-center gap-2 transition duration-300 ease-in-out hover:bg-[#00FF88] hover:text-black hover:scale-105"
+            >
+              <img src="./assets/message.png" alt="" class="w-5 h-5" />
+              Subscribe
+            </button>
           </div>
         </div>
       </div>
@@ -95,7 +118,7 @@
 
     <!-- About section  -->
     <section
-      class="w-[1600px] max-w-full mx-auto my-0 items-center text-center bg-[#1A0B2E] text-white px-52 pt-12 pb-32"
+      class="w-[1600px] max-w-full mx-auto my-0 text-center bg-[#1A0B2E] text-white px-6 lg:px-52 pt-12 pb-32"
     >
       <!-- For about content -->
       <div class="max-w-7xl text-center items-center mb-20">
@@ -114,7 +137,7 @@
       </div>
       <hr />
       <!-- For cards -->
-      <div class="grid grid-cols-4 gap-20 mt-20 max-w-7xl">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-20 mt-20 max-w-7xl">
         <div>
           <h3 class="text-5xl text-[#00FF88] font-black mb-1.5">150K+</h3>
           <p class="text-base font-normal leading-5">Monthly Listeners</p>
@@ -136,7 +159,7 @@
 
     <!--Why choose Tech Wave section -->
     <section
-      class="w-[1600px] max-w-full mx-auto bg-[#230E3D] text-white px-32 py-52"
+      class="w-[1600px] max-w-full mx-auto bg-[#230E3D] text-white px-6 lg:px-32 py-52"
     >
       <div>
         <h2 class="font-bold text-5xl text-center mb-10">
@@ -145,9 +168,9 @@
       </div>
 
       <!-- why choose cards section  -->
-      <div class="max-w-7xl grid grid-cols-3 gap-8">
+      <div class="max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
         <div
-          class="col-span-1 row-span-2 rounded-[1.5rem] py-24 px-10 bg-[#351165]"
+          class="col-span-1 lg:col-span-1 lg:row-span-2 rounded-[1.5rem] py-12 px-6 lg:py-24 lg:px-10 bg-[#351165]"
         >
           <img src="./assets/headphone.png" alt="" class="max-w-16 mb-4" />
           <h4 class="max-w-72 text-2xl font-bold mb-4">
@@ -160,7 +183,7 @@
           </p>
         </div>
         <div
-          class="col-span-2 row-span-1 rounded-[1.5rem] py-24 px-10 bg-[#351165]"
+          class="col-span-1 lg:col-span-2 lg:row-span-1 rounded-[1.5rem] py-12 px-6 lg:py-24 lg:px-10 bg-[#351165]"
         >
           <img src="./assets/device.png" alt="" class="max-w-16 mb-4" />
           <h4 class="max-w-72 text-2xl font-bold mb-4">Mobile Friendly</h4>
@@ -170,7 +193,7 @@
           </p>
         </div>
         <div
-          class="col-span-2 row-span-1 rounded-[1.5rem] py-24 px-10 bg-[#351165]"
+          class="col-span-1 lg:col-span-2 lg:row-span-1 rounded-[1.5rem] py-12 px-6 lg:py-24 lg:px-10 bg-[#351165]"
         >
           <img src="./assets/location.png" alt="" class="max-w-16 mb-4" />
           <h4 class="max-w-72 text-2xl font-bold mb-4">Global Community</h4>
@@ -179,7 +202,7 @@
           </p>
         </div>
         <div
-          class="col-span-2 row-span-1 rounded-[1.5rem] py-24 px-10 bg-[#351165]"
+          class="col-span-1 lg:col-span-2 lg:row-span-1 rounded-[1.5rem] py-12 px-6 lg:py-24 lg:px-10 bg-[#351165]"
         >
           <img src="./assets/exclusive.png" alt="" class="max-w-16 mb-4" />
           <h4 class="max-w-72 text-2xl font-bold mb-4">Exclusive Interviews</h4>
@@ -190,7 +213,9 @@
             success strategies.
           </p>
         </div>
-        <div class="col-span-1 rounded-[1.5rem] py-24 px-10 bg-[#351165]">
+        <div
+          class="col-span-1 lg:col-span-1 rounded-[1.5rem] py-24 px-10 bg-[#351165]"
+        >
           <img src="./assets/resource.png" alt="" class="max-w-16 mb-4" />
           <h4 class="max-w-72 text-2xl font-bold mb-4">Rich Resources</h4>
           <p class="text-base font-normal leading-6">
@@ -203,20 +228,26 @@
 
     <!-- Featured section  -->
     <section
-      class="w-[1600px] max-w-full mx-auto my-0 items-center bg-[#1A0B2E] text-white py-28 px-48"
+      class="w-[1600px] max-w-full mx-auto my-0 items-center bg-[#1A0B2E] text-white py-20 lg:py-28 lg:px-48"
     >
       <!-- For featured episode section  -->
-      <div class="mb-32">
-        <h2 class="font-bold text-5xl mb-10 text-center">Featured Episodes</h2>
+      <div class="mb-20 lg:mb-32">
+        <h2 class="font-bold text-3xl lg:text-5xl mb-10 text-center">
+          Featured Episodes
+        </h2>
 
         <!-- For youtube cards  -->
-        <div class="grid grid-cols-3 justify-between gap-7">
-          <div class=" transition-transform duration-300 ease-in-out
-            hover:-translate-y-2 hover:shadow-lg">
+        <div
+          class="max-w-7xl grid grid-cols-1 lg:grid-cols-3 justify-between gap-6 lg:gap-7"
+        >
+          <!-- First card  -->
+          <div
+            class="transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg"
+          >
             <!-- YouTube video -->
             <div class="  ">
               <iframe
-                class="w-full h-50 rounded-tl-3xl rounded-tr-3xl"
+                class="w-full h-56 lg:h-50 rounded-tl-3xl rounded-tr-3xl"
                 src="https://www.youtube.com/embed/LvTZlRhLh0g?si=7fKeCUk86pqAQz3u"
                 title="YouTube video player"
                 frameborder="0"
@@ -249,12 +280,13 @@
           </div>
 
           <!-- second card  -->
-          <div class="transition-transform duration-300 ease-in-out
-            hover:-translate-y-2 hover:shadow-lg">
+          <div
+            class="transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg"
+          >
             <!-- YouTube video 222222-->
             <div class="  ">
               <iframe
-                class="w-full h-50 rounded-tl-3xl rounded-tr-3xl"
+                class="w-full h-56 lg:h-50 rounded-tl-3xl rounded-tr-3xl"
                 src="https://www.youtube.com/embed/NgoJjIFULDE?si=kSB-v0kbtqYmY2k0"
                 title="YouTube video player"
                 frameborder="0"
@@ -289,12 +321,13 @@
 
           <!-- third card  -->
 
-          <div class="transition-transform duration-300 ease-in-out
-            hover:-translate-y-2 hover:shadow-lg">
+          <div
+            class="transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg"
+          >
             <!-- YouTube video 222222-->
             <div class="  ">
               <iframe
-                class="w-full h-50 rounded-tl-3xl rounded-tr-3xl"
+                class="w-full h-56 lg:h-50 rounded-tl-3xl rounded-tr-3xl"
                 src="https://www.youtube.com/embed/XNTWDb7kb2s?si=QGBhR5MroT8SkqBY"
                 title="YouTube video player"
                 frameborder="0"
@@ -337,21 +370,25 @@
 
         <!-- For Alex Kumer content  -->
         <div
-          class="flex max-w-[1200px] pt-10 pl-10 pb-10 bg-[#250D44] rounded-4xl"
+          class="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left max-w-[1200px] pt-10 px-6 lg:pl-10 pb-10 bg-[#250D44] rounded-4xl"
         >
-          <div class="w-80 mr-6">
-            <img src="./assets/host.png" alt="" class="max-w-full" />
+          <div class="w-40 lg:w-80 mb-6 lg:mb-0 lg:mr-6">
+            <img src="./assets/host.png" alt="" class="max-w-full mx-auto" />
           </div>
-          <div class="max-w-full w-4xl pr-10">
-            <h4 class="text-4xl font-bold mb-4">Alex Kumar</h4>
-            <p class="mb-4">
+          <div class="max-w-full lg:w-4xl lg:pr-10">
+            <h4
+              class="text-2xl lg:text-4xl font-bold mb-4 text-center lg:text-left"
+            >
+              Alex Kumar
+            </h4>
+            <p class="mb-4 text-base leading-6">
               Tech entrepreneur, productivity expert, and lifelong learner. Alex
               has been in the tech industry for over 10 years, working with
               startups and Fortune 500 companies. Through TechWave, Alex shares
               insights from industry leaders and practical advice for anyone
               looking to grow in tech.
             </p>
-            <div class="flex gap-2">
+            <div class="flex justify-center lg:justify-start gap-3">
               <div
                 class="w-10 h-10 border-2 border-[#533C72] rounded-full flex items-center justify-center"
               >
@@ -383,37 +420,44 @@
 
     <!-- For footer section  -->
     <footer
-      class="bg-[url('/assets/footer-bg.png')] bg-cover bg-center items-center text-center p-32 w-[1600px]"
+      class="bg-[url('/assets/footer-bg.png')] bg-cover bg-center text-center w-full lg:w-[1600px] mx-auto px-6 py-16 lg:p-32"
     >
-      <div class="w-[1360px] max-w-full">
-        <h3 class="text-7xl text-white mb-8">
+      <div class="w-full max-w-[1360px] mx-auto">
+        <!-- Logo -->
+        <h3 class="text-5xl lg:text-7xl text-white mb-10 text-center">
           Tech<span
             class="bg-[linear-gradient(90deg,_#F7E93F_0%,_#FB09B4_51%,_#9100F8_100%)] bg-clip-text text-transparent"
             >Wave</span
           >
         </h3>
+
+        <!--social Icons -->
         <div
-          class="flex items-center justify-between w-[544px] max-w-full my-0 mx-auto"
+          class="grid grid-cols-2 lg:flex items-center justify-center lg:justify-between gap-6 w-full max-w-[544px] mx-auto mb-10"
         >
-          <div class="flex gap-2 text-white">
+          <div class="flex items-center justify-center gap-2 text-white">
             <img src="./assets/spotify.png" alt="" />
             <p>Spotify</p>
           </div>
-          <div class="flex gap-2 text-white">
+
+          <div class="flex items-center justify-center gap-2 text-white">
             <img src="./assets/apple-podcast.png" alt="" />
             <p>Apple Podcasts</p>
           </div>
-          <div class="flex gap-2 text-white">
+
+          <div class="flex items-center justify-center gap-2 text-white">
             <img src="./assets/youtube-podcast.png" alt="" />
             <p>YouTube</p>
           </div>
-          <div class="flex gap-2 text-white">
+
+          <div class="flex items-center justify-center gap-2 text-white">
             <img src="./assets/twitter.png" alt="" />
             <p>Twitter</p>
           </div>
         </div>
 
-        <div class="text-center py-6 text-sm text-gray-400">
+        <!-- Copyright -->
+        <div class="text-center pt-4 text-sm text-gray-400">
           © 2026 TechWave Podcast. All rights reserved
         </div>
       </div>
