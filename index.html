@@ -22,13 +22,13 @@
         </h3>
 
         <ul class="flex gap-8">
-          <li class="text-lg"><a href="#">About</a></li>
-          <li class="text-lg"><a href="#">Episodes</a></li>
-          <li class="text-lg"><a href="#">Host</a></li>
+          <li class="text-lg"><a href="#" class="cursor-pointer text-white hover:text-[#00FF88] transition-colors duration-300">About</a></li>
+          <li class="text-lg"><a href="#" class="cursor-pointer text-white hover:text-[#00FF88] transition-colors duration-300">Episodes</a></li>
+          <li class="text-lg"><a href="#" class="cursor-pointer text-white hover:text-[#00FF88] transition-colors duration-300">Host</a></li>
         </ul>
 
         <button
-          class="px-4 py-3 rounded-full bg-[linear-gradient(90deg,_#F7E93F_0%,_#FB09B4_51%,_#9100F8_100%)]"
+          class="px-8 py-3 rounded-full text-white font-semibold bg-[linear-gradient(90deg,_#F7E93F_0%,_#FB09B4_51%,_#9100F8_100%)] flex items-center justify-center gap-2 transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-pink-500/40"
         >
           Sbuscribe
         </button>
@@ -64,15 +64,23 @@
           <!-- Buttons -->
           <div class="flex gap-4">
             <button
-              class="px-6 py-3 rounded-full bg-green-500 hover:bg-green-600 transition"
+              class="px-6 py-3 rounded-full text-white font-semibold bg-[linear-gradient(90deg,_#F7E93F_0%,_#FB09B4_51%,_#9100F8_100%)] flex items-center justify-center gap-2 transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-pink-500/40"
             >
+              <img src="./assets/spotify.png" alt="" class="w-5 h-5" />
               Listen on Spotify
             </button>
+
             <button
-              class="px-6 py-3 rounded-full bg-blue-500 hover:bg-blue-600 transition"
-            >
-              Subscribe
-            </button>
+  class="px-5 py-3 rounded-full border-2 border-[#00FF88]
+  text-[#00FF88] font-semibold bg-transparent
+  flex items-center justify-center gap-2
+  transition duration-300 ease-in-out
+  hover:bg-[#00FF88] hover:text-black hover:scale-105"
+>
+  <img src="./assets/message.png" alt="" class="w-5 h-5" />
+  Subscribe
+</button>
+
           </div>
         </div>
       </div>
@@ -191,12 +199,13 @@
       class="w-[1600px] max-w-full mx-auto my-0 items-center bg-[#1A0B2E] text-white py-28 px-48"
     >
       <!-- For featured episode section  -->
-      <div>
+      <div class="mb-32">
         <h2 class="font-bold text-5xl mb-10 text-center">Featured Episodes</h2>
 
         <!-- For youtube cards  -->
         <div class="grid grid-cols-3 justify-between gap-7">
-          <div class="">
+          <div class=" transition-transform duration-300 ease-in-out
+            hover:-translate-y-2 hover:shadow-lg">
             <!-- YouTube video -->
             <div class="  ">
               <iframe
@@ -233,7 +242,8 @@
           </div>
 
           <!-- second card  -->
-          <div class="">
+          <div class="transition-transform duration-300 ease-in-out
+            hover:-translate-y-2 hover:shadow-lg">
             <!-- YouTube video 222222-->
             <div class="  ">
               <iframe
@@ -272,7 +282,8 @@
 
           <!-- third card  -->
 
-          <div class="">
+          <div class="transition-transform duration-300 ease-in-out
+            hover:-translate-y-2 hover:shadow-lg">
             <!-- YouTube video 222222-->
             <div class="  ">
               <iframe
@@ -313,31 +324,90 @@
 
       <!-- Meet the host section  -->
       <div>
-        <div>
-          <h2>Meet the Host</h2>
-        </div>
+        <h2 class="font-bold text-5xl mb-10 text-center mb-10">
+          Meet the Host
+        </h2>
 
         <!-- For Alex Kumer content  -->
-        <div>
-          <img src="./assets/host.png" alt="" />
-        </div>
-        <div>
-          <h4>Alex Kumar</h4>
-          <p>
-            Tech entrepreneur, productivity expert, and lifelong learner. Alex
-            has been in the tech industry for over 10 years, working with
-            startups and Fortune 500 companies. Through TechWave, Alex shares
-            insights from industry leaders and practical advice for anyone
-            looking to grow in tech.
-          </p>
-          <div>
-            <img src="./assets/linkedin.png" alt="" />
-            <img src="./assets/x.png" alt="" />
-            <img src="./assets/instagram.png" alt="" />
-            <img src="./assets/youtube.png" alt="" />
+        <div
+          class="flex max-w-[1200px] pt-10 pl-10 pb-10 bg-[#250D44] rounded-4xl"
+        >
+          <div class="w-80 mr-6">
+            <img src="./assets/host.png" alt="" class="max-w-full" />
+          </div>
+          <div class="max-w-full w-4xl pr-10">
+            <h4 class="text-4xl font-bold mb-4">Alex Kumar</h4>
+            <p class="mb-4">
+              Tech entrepreneur, productivity expert, and lifelong learner. Alex
+              has been in the tech industry for over 10 years, working with
+              startups and Fortune 500 companies. Through TechWave, Alex shares
+              insights from industry leaders and practical advice for anyone
+              looking to grow in tech.
+            </p>
+            <div class="flex gap-2">
+              <div
+                class="w-10 h-10 border-2 border-[#533C72] rounded-full flex items-center justify-center"
+              >
+                <img src="./assets/linkedin.png" class="w-5" />
+              </div>
+
+              <div
+                class="w-10 h-10 border-2 border-[#533C72] rounded-full flex items-center justify-center"
+              >
+                <img src="./assets/x.png" class="w-5" />
+              </div>
+
+              <div
+                class="w-10 h-10 border-2 border-[#533C72] rounded-full flex items-center justify-center"
+              >
+                <img src="./assets/instagram.png" class="w-5" />
+              </div>
+
+              <div
+                class="w-10 h-10 border-2 border-[#533C72] rounded-full flex items-center justify-center"
+              >
+                <img src="./assets/youtube.png" class="w-5" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <footer
+      class="bg-[url('/assets/footer-bg.png')] bg-cover bg-center items-center text-center p-32 w-[1600px]"
+    >
+      <div class="w-[1360px] max-w-full">
+        <h3 class="text-7xl text-white mb-8">
+          Tech<span
+            class="bg-[linear-gradient(90deg,_#F7E93F_0%,_#FB09B4_51%,_#9100F8_100%)] bg-clip-text text-transparent"
+            >Wave</span
+          >
+        </h3>
+        <div
+          class="flex items-center justify-between w-[544px] max-w-full my-0 mx-auto"
+        >
+          <div class="flex gap-2 text-white">
+            <img src="./assets/spotify.png" alt="" />
+            <p>Spotify</p>
+          </div>
+          <div class="flex gap-2 text-white">
+            <img src="./assets/apple-podcast.png" alt="" />
+            <p>Apple Podcasts</p>
+          </div>
+          <div class="flex gap-2 text-white">
+            <img src="./assets/youtube-podcast.png" alt="" />
+            <p>YouTube</p>
+          </div>
+          <div class="flex gap-2 text-white">
+            <img src="./assets/twitter.png" alt="" />
+            <p>Twitter</p>
+          </div>
+        </div>
+
+        <div class="text-center py-6 text-sm text-gray-400">
+          © 2026 TechWave Podcast. All rights reserved
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
